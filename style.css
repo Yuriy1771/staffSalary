@@ -17,9 +17,9 @@
     border-radius: 5px;
 }
 
-#month {
+#monthCheckList {
     position: relative;
-    width: 100px;
+    width: 130px;
     height: 30px;
     margin-left: 52%;
     bottom: 40px;

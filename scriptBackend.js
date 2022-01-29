@@ -13,6 +13,17 @@ async function initCheckListUsers() {
   }
 }
 
+async function intiCheckListMonths() {
+    let months =  await doRequest(getMonthsURL);
+    if (months != null) {
+      for (let i = 0; i < months.length; i++) {
+        monthsCheckList.innerHTML += `<select id="monthsCheckList">
+          <option value="">${months[i]}</option>
+      </select>`
+      }
+    }
+  }
+
 async function doRequest( url)  {
   let response = await fetch(url);
   if (response.ok) {
@@ -23,3 +34,4 @@ async function doRequest( url)  {
 }
 
 initCheckListUsers();
+intiCheckListMonths();

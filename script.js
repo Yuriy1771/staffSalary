@@ -49,8 +49,8 @@ let fio;
 let month;
 
 function checkLets() {
-    fio = document.querySelector('#select').value;
-    month = document.querySelector('#month').value;
+    fio = document.querySelector('#usersCheckList').value;
+    month = document.querySelector('#monthCheckList').value;
 }
 
 function validCheck() {

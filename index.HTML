@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <link rel='stylesheet' type='text/css' href='style.css'>
+        <meta charset = 'utf-8'/>
+        <title>Staff salary</title>
+    </head>
+    <body>
+        <!-- Первое окно -->
+        <div id="windowOne">
+            <form action="">
+              <select id="usersCheckList">
+                <option value=""></option>
+             </select>
+            </form>
+            <form>
+                <select id="month">
+                    <option value="">Месяц</option>
+                    <option value="Январь">Январь</option>
+                    <option value="Февраль">Февраль</option>
+                    <option value="Март">Март</option>
+                    <option value="Апрель">Апрель</option>
+                    <option value="Май">Май</option>
+                    <option value="Июнь">Июнь</option>
+                    <option value="Июль">Июль</option>
+                    <option value="Август">Август</option>
+                    <option value="Сентябрь">Сентябрь</option>
+                    <option value="Октябрь">Октябрь</option>
+                    <option value="Ноябрь">Ноябрь</option>
+                    <option value="Декабрь">Декабрь</option>
+                </select>
+            </form>
+            <!-- Данные о сотруднике -->
+            <button id='find'>Найти</button>
+            <p id="WindowOnePosition">Должность:</p>
+            <p id="WindowOneSalary">Оклад:</p>
+            <p id="WindowOnePremium">Премия(%):</p>
+            <!-- Данные о ЗП -->
+            <p id="salaryNo">ЗП еще не расчитана</p>
+            <div id="dataAboutSalary">
+            <p id="salaryText">ЗП = </p>
+            <p id="OkladText">Оклад = </p>
+            <p id="premiumText">Премия = </p>
+        </div>
+            <button id="btnCalculate">Рассчитать</button>
+            <button id="btnRecalculate">Пересчитать</button>
+
+         </div>
+         <div id="modalWindow">
+            <div id="modal-content">
+                <p id="close">&times;</p>
+            <p id="titleSalary">Вы действительно хотите рассчитать ЗП?</p>
+            <p id="titleWithMonth">За месяц: </p>
+            <p id="titleWithFIO">Сотрудника:</p>
+            <input type="number" placeholder="Кол-во пропусков" id="propuskov">
+            <input type="number" placeholder="Кол-во сверхурочных" id="sverh">
+            <br>
+            <button id="btnCalculateInModal">Рассчитать</button>
+            <button id="btnCancel">Отмена</button>
+    </div>
+    </div>
+        <!-- <div id="windowTwo">
+            
+        </div> -->
+     <script src="script.js"></script>
+     <script src="scriptBackend.js"></script>
+    </body>
+</html>

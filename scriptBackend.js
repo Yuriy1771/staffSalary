@@ -1,5 +1,6 @@
 const baseURL = 'http://localhost:8080/api';
 const getUsersURL = baseURL + '/users';
+const getMonthsURL = baseURL + '/users/months';
 
 async function initCheckListUsers() {
   let users =  await doRequest(getUsersURL);

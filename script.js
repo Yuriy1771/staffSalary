@@ -6,6 +6,7 @@ const btnCancel = document.querySelector('#btnCancel');
 let dataAboutSalary = document.querySelector('#dataAboutSalary');
 let salaryNo = document.querySelector('#salaryNo');
 const btnRecalculate = document.querySelector('#btnRecalculate');
+const btnFind = document.querySelector('#find');
 //-----------------------------------------------------------------------
 
 
@@ -24,10 +25,15 @@ btnModal.onclick = () => {
     salaryNo.style.display = 'none';
     btn.style.display = 'none';
     btnRecalculate.style.display = 'block';
+    calculateSalary()
 }
 
 btnRecalculate.onclick = () => {
     modal.style.display = 'block';
+}
+
+btnFind.onclick = () => {
+    btnFindOnClick();
 }
 
 btnCancel.onclick = () => {
@@ -50,7 +56,7 @@ let month;
 
 function checkLets() {
     fio = document.querySelector('#usersCheckList').value;
-    month = document.querySelector('#monthCheckList').value;
+    month = document.querySelector('#monthsCheckList').value;
 }
 
 function validCheck() {
